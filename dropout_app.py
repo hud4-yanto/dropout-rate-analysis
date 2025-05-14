@@ -12,7 +12,7 @@ with col2:
     st.header('Status prediction app (Prototype)')
 
 
-data = pd.DataFrame()
+input_data={}
 
 
 col1, col2, col3 = st.columns(3)
@@ -96,7 +96,8 @@ with col3:
     data["Curricular_units_2nd_sem_grade"] = Curricular_units_2nd_sem_grade
  
 
- 
+data = pd.DataFrame([input_data])
+
 with st.expander("View the Raw Data"):
     st.dataframe(data=data, width=800, height=10)
 
