@@ -1,6 +1,6 @@
 import joblib
  
-model = joblib.load("model/gboost_model.joblib")
+model = joblib.load("model/rbf_model.joblib")
 result_target = joblib.load("model/encoder_target.joblib")
 
 
