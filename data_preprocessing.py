@@ -55,6 +55,8 @@ def data_preprocessing(data):
     """
     data = data.copy()
     df = pd.DataFrame()
+
+    df["Age_at_enrollment"] = scaler_Age_at_enrollment.transform(np.asarray(data["Age_at_enrollment"]).reshape(-1,1))[0]
     
     # PCA 1
     data["Curricular_units_1st_sem_enrolled"] = scaler_Curricular_units_1st_sem_enrolled.transform(np.asarray(data["Curricular_units_1st_sem_enrolled"]).reshape(-1,1))
