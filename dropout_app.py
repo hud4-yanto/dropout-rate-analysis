@@ -12,9 +12,27 @@ with col2:
     st.header('Status prediction app (Prototype)')
 
 
-data = pd.DataFrame()
+input_data = {
+    "Age_at_enrollment": int(st.number_input(label='Age_at_enrollment', value=23)),
+    "Previous_qualification_grade": float(st.number_input(label='Previous_qualification_grade', value=3)),
+    "Admission_grade": float(st.number_input(label='Admission_grade', value=4)),
+    "Curricular_units_1st_sem_enrolled": int(st.number_input(label='Curricular_units_1st_sem_enrolled', value=4)),
+    "Curricular_units_1st_sem_credited": int(st.number_input(label='Curricular_units_1st_sem_credited', value=3)),
+    "Curricular_units_1st_sem_evaluations": int(st.number_input(label='Curricular_units_1st_sem_evaluations', value=7)),
+    "Curricular_units_1st_sem_approved": int(st.number_input(label='Curricular_units_1st_sem_approved', value=3)),
+    "Curricular_units_1st_sem_without_evaluations": int(st.number_input(label='Curricular_units_1st_sem_without_evaluations', value=0)),
+    "Curricular_units_1st_sem_grade": float(st.number_input(label='Curricular_units_1st_sem_grade', value=110.0)),
+    "Curricular_units_2nd_sem_enrolled": int(st.number_input(label='Curricular_units_2nd_sem_enrolled', value=4)),
+    "Curricular_units_2nd_sem_credited": int(st.number_input(label='Curricular_units_2nd_sem_credited', value=3)),
+    "Curricular_units_2nd_sem_evaluations": int(st.number_input(label='Curricular_units_2nd_sem_evaluations', value=7)),
+    "Curricular_units_2nd_sem_approved": int(st.number_input(label='Curricular_units_2nd_sem_approved', value=3)),
+    "Curricular_units_2nd_sem_without_evaluations": int(st.number_input(label='Curricular_units_2nd_sem_without_evaluations', value=0)),
+    "Curricular_units_2nd_sem_grade": float(st.number_input(label='Curricular_units_2nd_sem_grade', value=100.0)),
+}
  
- 
+data = pd.DataFrame(input_data)
+
+
 col1, col2, col3 = st.columns(3)
  
 with col1:
