@@ -7,7 +7,7 @@ from prediction import prediction
 
 col1, col2 = st.columns([1, 5])
 with col1:
-    st.image("https://github.com/hud4-yanto/dropout-rate-analysis/blob/main/Prediksi.png", width=225)
+    st.image("https://github.com/hud4-yanto/dropout-rate-analysis/blob/main/Prediksi_logo.png", width=225)
 with col2:
     st.header('Status prediction app (Prototype)')
 
