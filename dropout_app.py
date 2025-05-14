@@ -7,7 +7,7 @@ from prediction import prediction
 
 col1, col2 = st.columns([1, 5])
 with col1:
-    st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png", width=130)
+    st.image("https://github.com/hud4-yanto/dropout-rate-analysis/blob/main/Prediksi.png", width=130)
 with col2:
     st.header('Status prediction app (Prototype)')
 
