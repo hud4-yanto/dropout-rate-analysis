@@ -10,7 +10,7 @@ scaler_Previous_qualification_grade = joblib.load("model/scaler_Previous_qualifi
 scaler_Curricular_units_1st_sem_approved = joblib.load("model/scaler_Curricular_units_1st_sem_approved.joblib")
 scaler_Curricular_units_1st_sem_credited = joblib.load("model/scaler_Curricular_units_1st_sem_credited.joblib")
 scaler_Curricular_units_1st_sem_grade = joblib.load("model/scaler_Curricular_units_1st_sem_grade.joblib")
-scaler_Curricular_units_1st_sem_enrolled = joblib.load("model/scaler_Curricular_units_1st_sem_enrolled.joblib")
+# scaler_Curricular_units_1st_sem_enrolled = joblib.load("model/scaler_Curricular_units_1st_sem_enrolled.joblib")
 scaler_Curricular_units_1st_sem_evaluations = joblib.load("model/scaler_Curricular_units_1st_sem_evaluations.joblib")
 scaler_Curricular_units_1st_sem_without_evaluations = joblib.load("model/scaler_Curricular_units_1st_sem_without_evaluations.joblib")
 scaler_Curricular_units_2nd_sem_approved =joblib.load("model/scaler_Curricular_units_2nd_sem_approved.joblib")
@@ -25,7 +25,7 @@ scaler_GDP = joblib.load("model/scaler_GDP.joblib")
 
 
 pca_numerical_columns_1 = [
-    'Curricular_units_1st_sem_enrolled',
+    # 'Curricular_units_1st_sem_enrolled',
     'Curricular_units_1st_sem_credited',
     'Curricular_units_1st_sem_evaluations', 
     'Curricular_units_1st_sem_approved',
@@ -36,12 +36,12 @@ pca_numerical_columns_1 = [
     'Curricular_units_2nd_sem_evaluations', 
     'Curricular_units_2nd_sem_approved',
     'Curricular_units_2nd_sem_grade',
-    'Curricular_units_2nd_sem_without_evaluations', 
+    'Curricular_units_2nd_sem_without_evaluations' 
 ]
  
 pca_numerical_columns_2 = [
     'Previous_qualification_grade',
-    'Admission_grade',
+    'Admission_grade'
 ]
  
 def data_preprocessing(data):
@@ -57,7 +57,7 @@ def data_preprocessing(data):
     df = pd.DataFrame()
     
     # PCA 1
-    data["Curricular_units_1st_sem_enrolled"] = scaler_Curricular_units_1st_sem_enrolled.transform(np.asarray(data["Curricular_units_1st_sem_enrolled"]).reshape(-1,1))[0]
+    # data["Curricular_units_1st_sem_enrolled"] = scaler_Curricular_units_1st_sem_enrolled.transform(np.asarray(data["Curricular_units_1st_sem_enrolled"]).reshape(-1,1))[0]
     data["Curricular_units_1st_sem_credited"] = scaler_Curricular_units_1st_sem_credited.transform(np.asarray(data["Curricular_units_1st_sem_credited"]).reshape(-1,1))[0]
     data["Curricular_units_1st_sem_evaluations"] = scaler_Curricular_units_1st_sem_evaluations.transform(np.asarray(data["Curricular_units_1st_sem_evaluations"]).reshape(-1,1))[0]
     data["Curricular_units_1st_sem_approved"] = scaler_Curricular_units_1st_sem_approved.transform(np.asarray(data["Curricular_units_1st_sem_approved"]).reshape(-1,1))[0]
