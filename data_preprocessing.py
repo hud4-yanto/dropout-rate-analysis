@@ -19,9 +19,6 @@ scaler_Curricular_units_2nd_sem_grade = joblib.load("model/scaler_Curricular_uni
 scaler_Curricular_units_2nd_sem_enrolled = joblib.load("model/scaler_Curricular_units_2nd_sem_enrolled.joblib")
 scaler_Curricular_units_2nd_sem_evaluations = joblib.load("model/scaler_Curricular_units_2nd_sem_evaluations.joblib")
 scaler_Curricular_units_2nd_sem_without_evaluations = joblib.load("model/scaler_Curricular_units_2nd_sem_without_evaluations.joblib")
-# scaler_Unemployment_rate = joblib.load("model/scaler_Unemployment_rate.joblib")
-# scaler_Inflation_rate = joblib.load("model/scaler_Inflation_rate.joblib")
-# scaler_GDP = joblib.load("model/scaler_GDP.joblib")
 
 
 pca_numerical_columns_1 = [
