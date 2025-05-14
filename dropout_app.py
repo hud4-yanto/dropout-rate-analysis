@@ -47,9 +47,9 @@ with col3:
  
 col1, col2, col3 = st.columns(3)
  
-# with col1:
-#     Curricular_units_1st_sem_enrolled = int(st.number_input(label='Curricular_units_1st_sem_enrolled', value=4))
-#     data["Curricular_units_1st_sem_enrolled"] = Curricular_units_1st_sem_enrolled
+with col1:
+    Curricular_units_1st_sem_enrolled = int(st.number_input(label='Curricular_units_1st_sem_enrolled', value=4))
+    data["Curricular_units_1st_sem_enrolled"] = Curricular_units_1st_sem_enrolled
  
 with col2:
     # st.header("Kolom 1")
