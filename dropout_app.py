@@ -155,9 +155,6 @@ with st.expander("View the Raw Data"):
 
 
 if st.button('Predict'):
-    st.write("Cek data sebelum preprocessing:")
-    st.dataframe(data)
-    st.write("Apakah ada null?:", data.isnull().any())
     if data.empty or data.isnull().any().any():
         st.error("Data tidak lengkap atau ada kesalahan input. Silakan periksa kembali semua isian.")
     else:
