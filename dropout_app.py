@@ -36,11 +36,11 @@ with col1:
     data["Age_at_enrollment"] = Age_at_enrollment
  
 with col2:
-    Previous_qualification_grade = int(st.number_input(label='Previous_qualification_grade', value=3))
+    Previous_qualification_grade = float(st.number_input(label='Previous_qualification_grade', value=3))
     data["Previous_qualification_grade"] = Previous_qualification_grade
  
 with col3:
-    Admission_grade = int(st.number_input(label='Admission_grade', value=4))
+    Admission_grade = float(st.number_input(label='Admission_grade', value=4))
     data["Admission_grade"] = Admission_grade
  
  
@@ -64,11 +64,11 @@ with col3:
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    Curricular_units_1st_sem_approved = float(st.number_input(label='Curricular_units_1st_sem_approved', value=3))
+    Curricular_units_1st_sem_approved = int(st.number_input(label='Curricular_units_1st_sem_approved', value=3))
     data["Curricular_units_1st_sem_approved"] = Curricular_units_1st_sem_approved
  
 with col2:
-    Curricular_units_1st_sem_without_evaluations = float(st.number_input(label='Curricular_units_1st_sem_without_evaluations', value=11.27))
+    Curricular_units_1st_sem_without_evaluations = int(st.number_input(label='Curricular_units_1st_sem_without_evaluations', value=11.27))
     data["Curricular_units_1st_sem_without_evaluations"] = Curricular_units_1st_sem_without_evaluations
  
 with col3:
@@ -97,11 +97,11 @@ with col3:
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    Curricular_units_2nd_sem_approved = float(st.number_input(label='Curricular_units_2nd_sem_approved', value=3))
+    Curricular_units_2nd_sem_approved = int(st.number_input(label='Curricular_units_2nd_sem_approved', value=3))
     data["Curricular_units_2nd_sem_approved"] = Curricular_units_2nd_sem_approved
  
 with col2:
-    Curricular_units_2nd_sem_without_evaluations = float(st.number_input(label='Curricular_units_2nd_sem_without_evaluations', value=11.27))
+    Curricular_units_2nd_sem_without_evaluations = int(st.number_input(label='Curricular_units_2nd_sem_without_evaluations', value=11.27))
     data["Curricular_units_2nd_sem_without_evaluations"] = Curricular_units_2nd_sem_without_evaluations
  
 with col3:
