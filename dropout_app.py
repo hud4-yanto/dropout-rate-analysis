@@ -72,7 +72,7 @@ with col2:
     data["Curricular_units_1st_sem_without_evaluations"] = Curricular_units_1st_sem_without_evaluations
  
 with col3:
-    'Curricular_units_1st_sem_grade' = float(st.number_input(label='Curricular_units_1st_sem_grade', value=11.27))
+    Curricular_units_1st_sem_grade = float(st.number_input(label='Curricular_units_1st_sem_grade', value=11.27))
     data["'Curricular_units_1st_sem_grade'"] = 'Curricular_units_1st_sem_grade'
  
 
