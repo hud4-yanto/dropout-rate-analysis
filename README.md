@@ -13,7 +13,7 @@ Untuk menjawab permasalahan bisnis tersebut, kita akan membuat sebuah sistem ber
 
 ### Persiapan
 
-Sumber data: Adapun sumber data menggunakan <a href="https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv" target="_blank">Student Performance's</a> 
+Sumber data: Adapun sumber data menggunakan <a href="https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv" target="blank">Student Performance's</a> 
 
 Setup environment:
 
@@ -60,7 +60,7 @@ Dalam business dashboard yang telah dibuat, terdapat beberapa visualisasi yang m
 - Stacked bar chart berdasarkan status siswa & Penerima beasiswa
 - Bar chart dari pekerjaan dan latar belakang pendidikan orang tua 
 
-Adapun dashboard dapat dilihat pada link <a href="https://lookerstudio.google.com/reporting/0184b148-39ee-4c6c-9af7-bee3de2e134c" target="_blank">berikut </a>
+Adapun dashboard dapat dilihat pada link <a href="https://lookerstudio.google.com/reporting/0184b148-39ee-4c6c-9af7-bee3de2e134c" target="blank">berikut </a>
 
 ## Menjalankan Sistem Machine Learning
 Adapun untuk mengakses prototype yang telah dibuat secara online (streamlit community cloud) dapat dilihat pada link <a href="https://dropout-rate-analysis-lnsscrfvuaztk9bty5p4a8.streamlit.app/">berikut </a>
